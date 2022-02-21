@@ -12,13 +12,13 @@ import "math"
 
 type myType int
 
+const SidesCircle myType = 0
+const SidesTriangle myType = 3
+const SidesSquare myType = 4
+
 func CalcSquare(sideLen float64, sidesNum myType) float64 {
 
 	var res float64
-
-	const SidesTriangle myType = 3
-	const SidesSquare myType = 4
-	const SidesCircle myType = 0
 
 	if sidesNum == SidesTriangle {
 		res = (math.Pow(sideLen, 2.0) * math.Sqrt(3.0)) / 4
