@@ -12,7 +12,9 @@ import "math"
 
 type myType int
 
-func CalcSquare(sideLen float64, sidesNum myType) (res float64) {
+func CalcSquare(sideLen float64, sidesNum myType) float64 {
+
+	var res float64
 
 	const SidesTriangle myType = 3
 	const SidesSquare myType = 4
